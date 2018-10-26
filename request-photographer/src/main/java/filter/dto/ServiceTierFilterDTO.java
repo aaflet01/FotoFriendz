@@ -1,16 +1,18 @@
 package filter.dto;
 
-public class ServiceTierFilterDTO implements FilterDTO {
-    private int tier; //TODO change to enum
-    ServiceTierFilterDTO(int tier) {
-        this.tier = tier;
+import categoricals.ServiceTier;
+
+public class ServiceTierFilterDTO {
+    private ServiceTier tier;
+    ServiceTierFilterDTO(ServiceTier tier) {
+        setTier(tier);
     }
 
-    public int getTier() {
+    public ServiceTier getTier() {
         return tier;
     }
 
-    public void setTier(int tier) {
+    public void setTier(ServiceTier tier) {
         this.tier = tier;
     }
 }

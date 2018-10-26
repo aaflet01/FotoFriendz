@@ -1,5 +1,4 @@
 import com.amazonaws.handlers.RequestHandler2;
-import filter.dto.FilterDTO;
 import filter.dto.MeetingLocationFilterDTO;
 import filter.dto.PhotographerRatingFilterDTO;
 import filter.dto.ServiceTierFilterDTO;
@@ -13,15 +12,15 @@ import java.util.Map;
 
 public class PhotographerSearchRequestHandler extends RequestHandler2 {
 
-    private static final Map<Class<? extends FilterDTO>, Class<? extends FilterHandler>> filterHandlerMap;
+    private static final Map<Class<?>, Class<? extends FilterHandler>> filterHandlerMap;
     static {
-        Map<Class<? extends FilterDTO>, Class<? extends FilterHandler>> temp = new HashMap<>();
+        Map<Class<?>, Class<? extends FilterHandler>> temp = new HashMap<>();
         temp.put(MeetingLocationFilterDTO.class, MeetingLocationFilterHandler.class);
         temp.put(PhotographerRatingFilterDTO.class, PhotographerRatingFilterHandler.class);
         temp.put(ServiceTierFilterDTO.class, ServiceTierFilterHandler.class);
         filterHandlerMap = temp;
     }
 
-    //TODO handle requests and stuff
+    //TODO handle requests and categoricals
 
 }

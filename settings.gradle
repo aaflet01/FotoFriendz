@@ -1,0 +1,5 @@
+rootProject.name = 'ff'
+
+include ':common'
+include ':request-photographer'
+

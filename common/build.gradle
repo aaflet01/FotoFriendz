@@ -12,7 +12,5 @@ repositories {
 }
 
 dependencies {
-    compile group: 'com.amazonaws', name: 'aws-java-sdk-lambda', version: '1.11.434'
-    compile project(':common')
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }

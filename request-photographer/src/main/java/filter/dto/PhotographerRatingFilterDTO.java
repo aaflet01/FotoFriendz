@@ -1,16 +1,18 @@
 package filter.dto;
 
-public class PhotographerRatingFilterDTO implements FilterDTO {
-    private int rating; //TODO change to enum
-    PhotographerRatingFilterDTO(int rating) {
-        this.rating = rating;
+import categoricals.PhotographerRating;
+
+public class PhotographerRatingFilterDTO {
+    private PhotographerRating rating;
+    PhotographerRatingFilterDTO(PhotographerRating rating) {
+        setRating(rating);
     }
 
-    public int getRating() {
+    public PhotographerRating getRating() {
         return rating;
     }
 
-    public void setRating(int rating) {
+    public void setRating(PhotographerRating rating) {
         this.rating = rating;
     }
 }

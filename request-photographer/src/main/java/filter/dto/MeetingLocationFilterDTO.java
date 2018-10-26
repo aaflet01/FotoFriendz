@@ -1,7 +1,7 @@
 package filter.dto;
 
-public class MeetingLocationFilterDTO implements FilterDTO {
-    private double longitude;
+public class MeetingLocationFilterDTO {
+    private double longitude; //TODO should these be changed to a coordinate (to match with other DTOs)?
     private double latitude;
     private double radius;
 
