@@ -1,37 +1,31 @@
 package filter.dto;
 
-public class MeetingLocationFilterDTO {
-    private double longitude; //TODO should these be changed to a coordinate (to match with other DTOs)?
-    private double latitude;
-    private double radius;
+import generics.MapDistance;
 
-    MeetingLocationFilterDTO(double longitude, double latitude, double radius) {
-        this.longitude = longitude;
-        this.latitude = latitude;
+import java.awt.geom.Point2D;
+
+public class MeetingLocationFilterDTO {
+    private Point2D location;
+    private MapDistance radius;
+
+    MeetingLocationFilterDTO(Point2D location, MapDistance radius) {
+        this.location = location;
         this.radius = radius;
     }
 
-    public double getLatitude() {
-        return latitude;
+    public Point2D getLocation() {
+        return location;
     }
 
-    public void setLatitude(double latitude) {
-        this.latitude = latitude;
+    public void setLocation(Point2D location) {
+        this.location = location;
     }
 
-    public double getRadius() {
+    public MapDistance getRadius() {
         return radius;
     }
 
-    public void setRadius(double radius) {
+    public void setRadius(MapDistance radius) {
         this.radius = radius;
-    }
-
-    public double getLongitude() {
-        return longitude;
-    }
-
-    public void setLongitude(double longitude) {
-        this.longitude = longitude;
     }
 }
