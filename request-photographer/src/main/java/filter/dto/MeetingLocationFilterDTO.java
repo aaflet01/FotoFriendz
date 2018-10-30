@@ -4,7 +4,7 @@ import generics.MapDistance;
 
 import java.awt.geom.Point2D;
 
-public class MeetingLocationFilterDTO {
+public class MeetingLocationFilterDTO implements FilterDTO {
     private Point2D location;
     private MapDistance radius;
 

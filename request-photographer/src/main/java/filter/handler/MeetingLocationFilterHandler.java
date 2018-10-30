@@ -2,7 +2,7 @@ package filter.handler;
 
 import filter.dto.MeetingLocationFilterDTO;
 
-public class MeetingLocationFilterHandler extends FilterHandler<MeetingLocationFilterDTO> {
+public class MeetingLocationFilterHandler implements FilterHandler<MeetingLocationFilterDTO> {
 
     @Override
     public String getQuery() {

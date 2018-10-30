@@ -2,7 +2,7 @@ package filter.dto;
 
 import categoricals.ServiceTier;
 
-public class ServiceTierFilterDTO {
+public class ServiceTierFilterDTO implements FilterDTO {
     private ServiceTier tier;
     ServiceTierFilterDTO(ServiceTier tier) {
         setTier(tier);

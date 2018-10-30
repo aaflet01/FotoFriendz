@@ -2,7 +2,7 @@ package filter.dto;
 
 import categoricals.PhotographerRating;
 
-public class PhotographerRatingFilterDTO {
+public class PhotographerRatingFilterDTO implements FilterDTO {
     private PhotographerRating rating;
     PhotographerRatingFilterDTO(PhotographerRating rating) {
         setRating(rating);

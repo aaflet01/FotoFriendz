@@ -2,7 +2,7 @@ package filter.handler;
 
 import filter.dto.ServiceTierFilterDTO;
 
-public class ServiceTierFilterHandler extends FilterHandler<ServiceTierFilterDTO> {
+public class ServiceTierFilterHandler implements FilterHandler<ServiceTierFilterDTO> {
 
     @Override
     public String getQuery() {

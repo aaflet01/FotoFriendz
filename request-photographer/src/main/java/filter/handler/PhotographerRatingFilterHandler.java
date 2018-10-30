@@ -2,7 +2,7 @@ package filter.handler;
 
 import filter.dto.PhotographerRatingFilterDTO;
 
-public class PhotographerRatingFilterHandler extends FilterHandler<PhotographerRatingFilterDTO> {
+public class PhotographerRatingFilterHandler implements FilterHandler<PhotographerRatingFilterDTO> {
 
     @Override
     public String getQuery() {
